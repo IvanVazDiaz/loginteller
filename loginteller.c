@@ -1,7 +1,7 @@
 /* loginteller.c
  * Based on monousuar.c at http://www.binefa.net/gnu/gcc/processos/Informacio_d_usuari.html
  * www.binefa.cat
- * 20120507
+ * 20230919
 */
 #include <stdio.h>
 #include <unistd.h>    // getlogin()
@@ -14,7 +14,7 @@ int main(){
         perror("getlogin");
         exit(EXIT_FAILURE);
     }  
-    printf("Your login name at the system is : %s\n",szLogin);
+    printf("El meu nom de sistema és : %s\n",szLogin);
 
     return (0);
 }
